@@ -18,3 +18,4 @@ If this fails, there may be an issue related to your connection speed and the ti
 - This should be easier to run on a scheduler. 
 - This should allow for full containerization
 - This should be tested on ECS, an always-on raspberry pi, or similar
+- This should allow for media attachment. Currently text-only.
