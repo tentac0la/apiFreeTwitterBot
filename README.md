@@ -7,7 +7,7 @@ In the future, this can and should be amended to a dict of scheduled posts possi
 
 
 # Security
-Right now, this CAN accept hard-coded usernames and passwords, but it is recommended that the end user establish local variables for username and password.
+Right now, this CAN accept hard-coded usernames and passwords (added as strings in respective "goes here" positions listed below), but it is recommended that the end user establish local variables for username and password.
 Once established, the script should call these variables instead of the respective 'username_goes_here_but_local_var_recommended' and 'password_goes_here_but_local_var_recommended' strings.
 
 # Troubleshooting
