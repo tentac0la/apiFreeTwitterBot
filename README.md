@@ -22,14 +22,24 @@ If this fails, there may be an issue related to your connection speed and the ti
 # Windows Setup
 
 -Install Python (3.7 is ideal but should function through 3.9), ideally run out of command prompt, hyper, or similar.
+
 -Install pip3
+
 -Use pip3 to install the requirements through the following command from the top level of this repo:
+
 `pip3 install -r requirements.txt`
+
 -Establish local variables of your bot's twitter username and password with the variable names twuser and twpass respectively:
+
 https://docs.oracle.com/en/database/oracle/machine-learning/oml4r/1.5.1/oread/creating-and-modifying-environment-variables-on-windows.html
+
 -Change the two arguments .bat file to the full path of your python executable (python.exe) and the full path of this repo's .py script (apiFreeTwitterBot.py).
 Example:
+
 `"C:\Users\owner\AppData\Local\Microsoft\WindowsApps\python.exe" "C:\Users\owner\Desktop\repos\apiFreeTwitterBot\apiFreeTwitterBot.py"
+
 EXIT /B`
+
 -Schedule the run of the .bat file per instructions here:
+
 https://active-directory-wp.com/docs/Usage/How_to_add_a_cron_job_on_Windows/Scheduled_tasks_and_cron_jobs_on_Windows/index.html
