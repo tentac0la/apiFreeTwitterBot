@@ -37,7 +37,6 @@ https://docs.oracle.com/en/database/oracle/machine-learning/oml4r/1.5.1/oread/cr
 Example:
 
 `"C:\Users\owner\AppData\Local\Microsoft\WindowsApps\python.exe" "C:\Users\owner\Desktop\repos\apiFreeTwitterBot\apiFreeTwitterBot.py"
-
 EXIT /B`
 
 -Schedule the run of the .bat file per instructions here:
