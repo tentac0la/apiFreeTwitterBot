@@ -7,6 +7,9 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver import ActionChains
 from webdriver_manager.chrome import ChromeDriverManager
 
+twuser = os.environ['twuser']
+twpass = os.environ['twpass']
+
 
 tweetList = ['''...I dunno, I have a problem with every single thing I'm hearing right now.'''
             ,'''I don't know who gave you that idea, but Fixers are anything but noble or heroic. The only scent you'll smell is the miserable stink of wage slaves.'''
@@ -21,7 +24,6 @@ tweetList = ['''...I dunno, I have a problem with every single thing I'm hearing
             ,'''That's right... If that bastard is really dead... I might not having have nothing left to chase after.'''
             ,'''Flitting from Office to Office, obsessively taking requests and exploring the Outskirts... Maybe I was hoping that I'd be wrong.'''
             ,'''I heard you glued our bodies back together from pieces. I look forward to working with you.'''
-	    ,'''pic.twitter.com/71bnwfVEMN'''
             ]
 
 tweet = random.choice(tweetList)
@@ -33,11 +35,11 @@ driver.get("https://twitter.com/i/flow/login")
 time.sleep(1)
 
 loginElement = driver.find_element_by_xpath("//input[@name='text']")
-loginElement.send_keys(username)
+loginElement.send_keys(twuser)
 loginElement.send_keys(Keys.ENTER)
 time.sleep(1)
 passElement = driver.find_element_by_xpath("//input[@name='password']")
-passElement.send_keys(password)
+passElement.send_keys(twpass)
 passElement.send_keys(Keys.ENTER)
 time.sleep(3)
 
