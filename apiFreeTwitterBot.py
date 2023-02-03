@@ -33,11 +33,11 @@ driver.get("https://twitter.com/i/flow/login")
 time.sleep(1)
 
 loginElement = driver.find_element_by_xpath("//input[@name='text']")
-loginElement.send_keys('autocola')
+loginElement.send_keys(username)
 loginElement.send_keys(Keys.ENTER)
 time.sleep(1)
 passElement = driver.find_element_by_xpath("//input[@name='password']")
-passElement.send_keys('CallMeTenta')
+passElement.send_keys(password)
 passElement.send_keys(Keys.ENTER)
 time.sleep(3)
 
