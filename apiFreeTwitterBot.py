@@ -34,18 +34,18 @@ driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get("https://twitter.com/i/flow/login")
 time.sleep(1)
 
-loginElement = driver.find_element_by_xpath("//input[@name='text']")
+loginElement = driver.find_element("xpath","//input[@name='text']")
 loginElement.send_keys(twuser)
 loginElement.send_keys(Keys.ENTER)
 time.sleep(1)
-passElement = driver.find_element_by_xpath("//input[@name='password']")
+passElement = driver.find_element("xpath","//input[@name='password']")
 passElement.send_keys(twpass)
 passElement.send_keys(Keys.ENTER)
 time.sleep(3)
 
 
-#driver.find_element_by_class_name('public-DraftStyleDefault-block').click()
-tweetElement = driver.find_element_by_class_name('public-DraftStyleDefault-block')
+#driver.find_element("class name", "public-DraftStyleDefault-block").click()
+tweetElement = driver.find_element("class name","public-DraftStyleDefault-block")
 ActionChains(driver)\
         .click(tweetElement)\
         .send_keys(tweet)\
